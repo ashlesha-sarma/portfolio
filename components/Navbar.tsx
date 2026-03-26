@@ -39,7 +39,7 @@ export default function Navbar() {
           <img 
             src="/logo_portfolio.png" 
             alt="Ashlesha Sarma Logo" 
-            className="w-10 h-10 object-contain drop-shadow-sm border border-white/20 rounded-lg p-0.5 bg-white/10"
+            className="w-12 h-12 object-contain drop-shadow-sm border border-white/20 rounded-lg p-0.5 bg-white/10"
           />
         </a>
 
