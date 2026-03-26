@@ -35,7 +35,7 @@ export default function Hero() {
       {/* Scrapbook element — tape top left */}
       <div
         className="tape z-0"
-        style={{ top: "5rem", left: "2rem", transform: "rotate(-6deg)", opacity: 0.7 }}
+        style={{ top: "1.5rem", left: "1rem", transform: "rotate(-6deg)", opacity: 0.7 }}
         aria-hidden
       />
 

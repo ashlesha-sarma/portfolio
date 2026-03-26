@@ -63,7 +63,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="glass-btn inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-ink/80 hover:text-ink"
           >
-            <span className="label-mono text-xs">↓</span> Resume
+            <span className="label-mono text-xs"></span> Resume
           </a>
         </div>
 

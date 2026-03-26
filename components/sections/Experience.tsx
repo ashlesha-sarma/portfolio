@@ -71,14 +71,7 @@ export default function Experience() {
                     className="paper-card rounded-2xl p-6 hover:shadow-paper-lg transition-all duration-300 group"
                     style={{ background: "rgba(196, 217, 245, 0.35)" }}
                   >
-                    {/* Tape decoration on first item */}
-                    {i === 0 && (
-                      <div
-                        className="tape tape-sm"
-                        style={{ top: "-9px", right: "24px", transform: "rotate(2.5deg)" }}
-                        aria-hidden
-                      />
-                    )}
+                    
 
                     <div className="flex items-start justify-between mb-3 flex-wrap gap-2">
                       <div>
