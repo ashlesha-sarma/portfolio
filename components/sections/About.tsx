@@ -45,7 +45,7 @@ export default function About() {
                 {["San Francisco, CA", "Open to remote", "Available Q3 2025"].map((tag) => (
                   <span
                     key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-accent/20 text-accent-2 font-medium"
+                    className="text-xs px-3 py-1 rounded-full bg-beige text-accent-2 font-medium"
                   >
                     {tag}
                   </span>

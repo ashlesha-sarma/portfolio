@@ -84,14 +84,14 @@ export default function Hero() {
       >
         <a
           href="#projects"
-          className="glass-btn inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-ink"
+          className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium"
         >
           View Projects
-          <span className="text-accent-2">→</span>
+          <span>→</span>
         </a>
         <a
           href="#contact"
-          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium text-ink/70 border border-accent/50 hover:border-accent-2/60 hover:text-ink transition-all duration-200 paper-card"
+          className="btn-secondary inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-medium"
         >
           Get in touch
         </a>

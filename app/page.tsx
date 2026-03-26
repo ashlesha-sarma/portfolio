@@ -10,12 +10,12 @@ import Footer from "@/components/sections/Footer";
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-bg overflow-x-hidden">
-      {/* Subtle grid overlay */}
+      {/* Grid overlay — warmer, more visible notebook grid */}
       <div
         className="fixed inset-0 pointer-events-none z-0"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(220,235,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(220,235,255,0.35) 1px, transparent 1px)",
+            "linear-gradient(rgba(201,219,245,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(201,219,245,0.6) 1px, transparent 1px)",
           backgroundSize: "40px 40px",
         }}
         aria-hidden
@@ -24,9 +24,18 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <About />
+
+        {/* Alternate-section contrast */}
+        <div style={{ background: "linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 50%, var(--bg) 100%)" }}>
+          <About />
+        </div>
+
         <Skills />
-        <Projects />
+
+        <div style={{ background: "linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 50%, var(--bg) 100%)" }}>
+          <Projects />
+        </div>
+
         <Experience />
         <Contact />
         <Footer />
@@ -34,3 +43,4 @@ export default function Home() {
     </main>
   );
 }
+

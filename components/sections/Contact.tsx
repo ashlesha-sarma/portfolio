@@ -84,7 +84,7 @@ export default function Contact() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-accent/10 transition-colors group"
+                  className="flex items-center gap-3 p-3 rounded-xl hover:bg-beige/50 transition-colors group"
                 >
                   <span className="text-accent-2 text-sm">{icon}</span>
                   <div>
@@ -120,7 +120,7 @@ export default function Contact() {
                   <p className="text-sm text-ink/60 mb-6">{feedback}</p>
                   <button
                     onClick={() => setStatus("idle")}
-                    className="glass-btn px-6 py-2.5 rounded-full text-sm font-medium text-ink"
+                    className="btn-secondary px-6 py-2.5 rounded-full text-sm font-medium"
                   >
                     Send another
                   </button>
@@ -143,7 +143,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="Jane Smith"
-                      className="w-full px-4 py-3 rounded-xl border border-accent/30 bg-white/70 text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/50 focus:ring-2 focus:ring-accent/20 transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-xl border border-grid/80 bg-cream-light text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/40 focus:ring-2 focus:ring-accent-2/15 transition-all duration-200"
                     />
                   </div>
 
@@ -163,7 +163,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       placeholder="jane@example.com"
-                      className="w-full px-4 py-3 rounded-xl border border-accent/30 bg-white/70 text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/50 focus:ring-2 focus:ring-accent/20 transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-xl border border-grid/80 bg-cream-light text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/40 focus:ring-2 focus:ring-accent-2/15 transition-all duration-200"
                     />
                   </div>
 
@@ -183,7 +183,7 @@ export default function Contact() {
                       required
                       rows={5}
                       placeholder="Tell me about your project, idea, or question..."
-                      className="w-full px-4 py-3 rounded-xl border border-accent/30 bg-white/70 text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/50 focus:ring-2 focus:ring-accent/20 transition-all duration-200 resize-none"
+                      className="w-full px-4 py-3 rounded-xl border border-grid/80 bg-cream-light text-ink placeholder-ink/30 text-sm focus:outline-none focus:border-accent-2/40 focus:ring-2 focus:ring-accent-2/15 transition-all duration-200 resize-none"
                     />
                   </div>
 
@@ -198,7 +198,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="glass-btn w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium text-ink disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="btn-primary w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-medium disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     {status === "loading" ? (
                       <>

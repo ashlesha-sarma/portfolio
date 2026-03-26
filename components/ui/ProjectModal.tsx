@@ -58,7 +58,7 @@ export default function ProjectModal({
         {/* Header */}
         <div
           className="sticky top-0 z-10 flex items-center justify-between px-7 py-5 border-b border-white/50"
-          style={{ background: "rgba(250,250,247,0.9)", backdropFilter: "blur(16px)" }}
+          style={{ background: "rgba(250, 243, 234, 0.92)", backdropFilter: "blur(16px)" }}
         >
           <div className="flex items-center gap-3">
             {/* macOS dots */}
@@ -114,7 +114,7 @@ export default function ProjectModal({
                         ? "bg-green-100 text-green-700"
                         : proj.status === "WIP"
                         ? "bg-amber-100 text-amber-700"
-                        : "bg-accent/20 text-accent-2"
+                        : "bg-beige text-accent-2"
                     )}
                   >
                     {proj.status}
@@ -131,7 +131,7 @@ export default function ProjectModal({
                 {proj.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-xs px-2.5 py-1 rounded-full border border-accent/40 text-accent-2 font-mono font-medium"
+                    className="text-xs px-2.5 py-1 rounded-full border border-grid text-accent-2 font-mono font-medium"
                   >
                     {t}
                   </span>

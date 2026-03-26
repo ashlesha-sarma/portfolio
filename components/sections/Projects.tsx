@@ -26,8 +26,8 @@ const folders: Folder[] = [
   {
     name: "Web Projects",
     icon: "◻",
-    color: "#C8DEFF",
-    tabColor: "#AACAFF",
+    color: "#C4D9F5",
+    tabColor: "#A8C8EE",
     count: 3,
     projects: [
       {
@@ -61,8 +61,8 @@ const folders: Folder[] = [
   {
     name: "AI / ML Projects",
     icon: "⊛",
-    color: "#FFE4B5",
-    tabColor: "#FFD08A",
+    color: "#F5DCA8",
+    tabColor: "#ECC880",
     count: 3,
     projects: [
       {
@@ -96,7 +96,7 @@ const folders: Folder[] = [
     name: "Tools & CLIs",
     icon: "⚙",
     color: "#C4EDD4",
-    tabColor: "#A8DEB8",
+    tabColor: "#A0D8B0",
     count: 2,
     projects: [
       {
@@ -122,7 +122,7 @@ const folders: Folder[] = [
     name: "Experiments",
     icon: "✦",
     color: "#D6CCFF",
-    tabColor: "#C0B4FF",
+    tabColor: "#C0B6F0",
     count: 2,
     projects: [
       {

@@ -6,7 +6,7 @@ const skills = [
   {
     category: "Languages",
     color: "folder-blue",
-    tabColor: "#B8D4FF",
+    tabColor: "#A8C8EE",
     icon: "{ }",
     items: ["TypeScript", "Python", "Rust", "Go", "SQL"],
     desc: "Strong foundations across systems and scripting languages.",
@@ -14,7 +14,7 @@ const skills = [
   {
     category: "Frontend",
     color: "folder-purple",
-    tabColor: "#C8C0FF",
+    tabColor: "#C0B6F0",
     icon: "◻",
     items: ["React", "Next.js", "Framer Motion", "Tailwind CSS", "Three.js"],
     desc: "Crafting performant, beautiful user interfaces.",
@@ -22,7 +22,7 @@ const skills = [
   {
     category: "Backend & Cloud",
     color: "folder-green",
-    tabColor: "#B8E8C8",
+    tabColor: "#A8DDB8",
     icon: "⬡",
     items: ["Node.js", "FastAPI", "PostgreSQL", "Redis", "AWS", "Docker"],
     desc: "Scalable APIs and infrastructure that doesn't break.",
@@ -30,7 +30,7 @@ const skills = [
   {
     category: "AI / ML",
     color: "folder-amber",
-    tabColor: "#FFD8A0",
+    tabColor: "#ECC880",
     icon: "⊛",
     items: ["PyTorch", "LangChain", "OpenAI API", "HuggingFace", "RAG", "Fine-tuning"],
     desc: "From research to production ML systems.",
@@ -38,7 +38,7 @@ const skills = [
   {
     category: "Tools & Ops",
     color: "folder-blue",
-    tabColor: "#B8D4FF",
+    tabColor: "#A8C8EE",
     icon: "⚙",
     items: ["Git", "GitHub Actions", "Terraform", "Kubernetes", "Vercel", "Datadog"],
     desc: "DevOps and tooling for smooth delivery.",
@@ -46,7 +46,7 @@ const skills = [
   {
     category: "Design",
     color: "folder-purple",
-    tabColor: "#C8C0FF",
+    tabColor: "#C0B6F0",
     icon: "✦",
     items: ["Figma", "Framer", "Design Systems", "Accessibility", "Motion Design"],
     desc: "Design thinking meets engineering precision.",
@@ -54,10 +54,10 @@ const skills = [
 ];
 
 const colorMap: Record<string, string> = {
-  "folder-blue": "#C8DEFF",
+  "folder-blue": "#C4D9F5",
   "folder-purple": "#D6CCFF",
   "folder-green": "#C4EDD4",
-  "folder-amber": "#FFE4B5",
+  "folder-amber": "#F5DCA8",
 };
 
 export default function Skills() {

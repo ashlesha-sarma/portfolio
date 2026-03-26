@@ -77,10 +77,11 @@ export default function Experience() {
 
                 {/* Dot */}
                 <div
-                  className="absolute left-0 md:left-[8.5rem] top-1.5 w-[18px] h-[18px] rounded-full border-2 border-bg flex-shrink-0 z-10"
+                  className="absolute left-0 md:left-[8.5rem] top-1.5 w-[18px] h-[18px] rounded-full flex-shrink-0 z-10"
                   style={{
                     background: job.accent,
                     boxShadow: `0 0 0 3px ${job.accent}40`,
+                    border: "2px solid var(--bg)",
                   }}
                 />
 
@@ -128,7 +129,7 @@ export default function Experience() {
                       {job.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="text-xs px-2.5 py-0.5 rounded-full bg-accent/15 text-accent-2 font-mono"
+                          className="text-xs px-2.5 py-0.5 rounded-full bg-beige text-accent-2 font-mono"
                         >
                           {tag}
                         </span>
@@ -158,7 +159,7 @@ export default function Experience() {
             <p className="text-xs text-ink/50">2016 — 2020 · GPA 3.9 · Honors</p>
             <div className="mt-3 flex flex-wrap gap-1.5">
               {["Machine Learning", "Systems", "Algorithms", "Distributed Computing"].map((c) => (
-                <span key={c} className="text-xs px-2 py-0.5 rounded bg-accent/15 text-accent-2">
+                <span key={c} className="text-xs px-2 py-0.5 rounded bg-beige text-accent-2">
                   {c}
                 </span>
               ))}
