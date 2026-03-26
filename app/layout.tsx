@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Alex Chen — Full Stack & AI/ML Engineer",
+  title: "Ashlesha Sarma Portfolio",
   description:
-    "Portfolio of Alex Chen — Full Stack Developer and AI/ML Engineer crafting intelligent, elegant digital experiences.",
+    "Portfolio of Ashlesha Sarma — Full Stack Developer and AI/ML Enthusiast.",
   keywords: ["portfolio", "full stack", "AI/ML", "engineer", "developer"],
   openGraph: {
-    title: "Alex Chen — Portfolio",
-    description: "Full Stack Developer + AI/ML Engineer",
+    title: "Ashlesha Sarma — Portfolio",
+    description: "Full Stack Developer + AI/ML Enthusiast",
     type: "website",
   },
 };

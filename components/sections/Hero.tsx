@@ -32,12 +32,6 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col justify-center px-6 pt-28 pb-16 max-w-6xl mx-auto"
     >
-      {/* Scrapbook element — tape top left */}
-      <div
-        className="tape z-0"
-        style={{ top: "1.5rem", left: "0.4rem", transform: "rotate(-6deg)", opacity: 0.7 }}
-        aria-hidden
-      />
 
       {/* Label */}
       <div className="flex items-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "both", opacity: 0 }}>

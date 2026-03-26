@@ -32,12 +32,15 @@ export default function Navbar() {
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#"
-          className="font-display text-xl font-semibold tracking-tight text-ink hover:text-accent-2 transition-colors"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+        <a 
+          href="#" 
+          className="flex items-center gap-3 transition-transform duration-300 hover:scale-105"
         >
-          Ashlesha<span className="text-accent-2 italic">.</span>
+          <img 
+            src="/logo_portfolio.png" 
+            alt="Ashlesha Sarma Logo" 
+            className="w-10 h-10 object-contain drop-shadow-sm border border-white/20 rounded-lg p-0.5 bg-white/10"
+          />
         </a>
 
         {/* Desktop links */}

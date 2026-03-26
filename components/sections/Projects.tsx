@@ -180,7 +180,7 @@ export default function Projects() {
                 >
                   {folder.name}
                 </h3>
-                <p className="inline-flex items-center text-[13px] font-bold tracking-wide text-ink/90 px-3.5 py-1.5 rounded-full bg-white/45 backdrop-blur-md border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_2px_6px_rgba(44,62,80,0.12)] mt-1 mb-2">
+                <p className="inline-flex items-center text-[13px] font-bold tracking-wide text-ink/70 px-3.5 py-1.5 rounded-full bg-white/45 backdrop-blur-md border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_2px_6px_rgba(44,62,80,0.12)] mt-1 mb-2">
                   {folder.label}
                 </p>
 
