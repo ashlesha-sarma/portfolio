@@ -300,6 +300,46 @@ body {
   border-radius: 6px 6px 0 0;
 }
 
+/* Skills-only Finder-like folder silhouette */
+.skill-folder-card {
+  border-radius: 18px;
+}
+
+.skill-folder-tab {
+  top: -12px;
+  left: 14px;
+  width: 62px;
+  height: 14px;
+  border-radius: 9px 9px 0 0;
+  z-index: 2;
+}
+
+.skill-folder-body {
+  position: relative;
+  border-radius: 10px 12px 14px 14px;
+  overflow: hidden;
+}
+
+/* Projects-only macOS folder silhouette */
+.project-folder-card {
+  border-radius: 18px;
+}
+
+.project-folder-tab {
+  top: -12px;
+  left: 14px;
+  width: 64px;
+  height: 14px;
+  border-radius: 9px 9px 0 0;
+  z-index: 2;
+}
+
+.project-folder-body {
+  position: relative;
+  border-radius: 10px 12px 14px 14px;
+  overflow: hidden;
+}
+
 /* ── SCRAPBOOK STAR ── */
 .star-sticker {
   display: inline-flex;

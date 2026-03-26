@@ -50,7 +50,7 @@ export default function Contact() {
       <div ref={ref} className="section-fade">
         {/* Label */}
         <div className="flex items-center gap-3 mb-14">
-          <span className="label-mono">§ 05 — Contact</span>
+          <span className="label-mono">06 — Contact</span>
           <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
         </div>
 
@@ -61,23 +61,23 @@ export default function Contact() {
               className="display-lg text-ink mb-6"
               style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
-              Let&apos;s build something{" "}
+              Let&apos;s build and grow{" "}
               <span className="italic text-accent-2">together.</span>
             </h2>
 
             <p className="text-ink/60 leading-relaxed mb-8 max-w-sm">
-              Whether you have a project in mind, a question about my work, or
-              just want to say hi — I read every message and reply within 48
-              hours.
+              Reach out for collaboration, internship opportunities, project
+              discussions, or anything related to full stack and AI/ML work.
             </p>
 
             {/* Contact info */}
             <div className="space-y-4">
               {[
-                { icon: "✉", label: "Email", value: "hello@alexchen.dev", href: "mailto:hello@alexchen.dev" },
-                { icon: "◈", label: "GitHub", value: "github.com/alexchen", href: "https://github.com" },
-                { icon: "◇", label: "LinkedIn", value: "linkedin.com/in/alexchen", href: "https://linkedin.com" },
-                { icon: "◉", label: "Twitter / X", value: "@alexchen_dev", href: "https://x.com" },
+                { icon: "✆", label: "Phone", value: "+91-82550-51793", href: "tel:+918255051793" },
+                { icon: "✉", label: "Email", value: "ashleshasarma.contact@gmail.com", href: "mailto:ashleshasarma.contact@gmail.com" },
+                { icon: "◈", label: "GitHub", value: "github.com/ashlesha-sarma", href: "https://github.com/ashlesha-sarma" },
+                { icon: "◇", label: "LinkedIn", value: "linkedin.com/in/ashlesha-sarma", href: "https://linkedin.com/in/ashlesha-sarma" },
+                { icon: "◉", label: "Portfolio", value: "ashlesha-sarma-portfolio.vercel.app", href: "https://ashlesha-sarma-portfolio.vercel.app" },
               ].map(({ icon, label, value, href }) => (
                 <a
                   key={label}

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const roles = ["Full Stack Developer", "AI/ML Engineer", "Creative Builder"];
+const roles = ["Full Stack Developer + AI/ML Engineer", "AI/ML Engineer", "Full Stack Developer"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -34,26 +34,26 @@ export default function Hero() {
     >
       {/* Scrapbook element — tape top left */}
       <div
-        className="tape"
+        className="tape z-0"
         style={{ top: "5rem", left: "2rem", transform: "rotate(-6deg)", opacity: 0.7 }}
         aria-hidden
       />
 
       {/* Label */}
       <div className="flex items-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: "0.1s", animationFillMode: "both", opacity: 0 }}>
-        <span className="label-mono">Portfolio — 2025</span>
+        <span className="label-mono">Portfolio — 2026</span>
         <span className="block w-8 h-px bg-accent-2/50" />
         <span className="star-sticker" aria-hidden>★</span>
       </div>
 
       {/* Main heading */}
       <div
-        className="mb-6 animate-fade-in-up"
+        className="relative z-10 mb-6 animate-fade-in-up"
         style={{ animationDelay: "0.2s", animationFillMode: "both", opacity: 0 }}
       >
         <h1 className="display-xl text-ink leading-none mb-2">
-          Alex<br />
-          <span className="italic text-accent-2">Chen.</span>
+          Ashlesha<br />
+          <span className="italic text-accent-2">Sarma.</span>
         </h1>
       </div>
 
@@ -73,8 +73,8 @@ export default function Hero() {
         className="max-w-md text-ink/60 text-lg leading-relaxed mb-12 animate-fade-in-up"
         style={{ animationDelay: "0.55s", animationFillMode: "both", opacity: 0 }}
       >
-        I craft intelligent, elegant digital experiences — where systems
-        thinking meets creative precision.
+        Full Stack Developer + AI/ML Engineer building practical, scalable
+        products across web and machine learning.
       </p>
 
       {/* CTAs */}
@@ -97,22 +97,6 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-10 left-6 flex flex-col items-center gap-2 animate-fade-in"
-        style={{ animationDelay: "1.2s", animationFillMode: "both", opacity: 0 }}
-      >
-        <div className="w-px h-12 bg-gradient-to-b from-transparent to-accent-2/50" />
-        <span className="label-mono text-[10px] -rotate-90 origin-center translate-x-3">Scroll</span>
-      </div>
-
-      {/* Wax seal decorative */}
-      <div
-        className="absolute bottom-16 right-8 md:right-16 animate-float wax-seal"
-        aria-hidden
-      >
-        AC
-      </div>
     </section>
   );
 }

@@ -15,132 +15,114 @@ interface Project {
 
 interface Folder {
   name: string;
-  icon: string;
+  label: string;
+  icon: JSX.Element;
   color: string;
   tabColor: string;
   count: number;
+
   projects: Project[];
 }
 
 const folders: Folder[] = [
   {
-    name: "Web Projects",
-    icon: "◻",
+    name: "FloodSense Assam",
+    label: "ML + Data System",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M2 14c1.2 1 2.4 1.5 3.6 1.5S8 15 9.2 14s2.4-1.5 3.6-1.5 2.4.5 3.6 1.5 2.4 1.5 3.6 1.5S22.8 15 24 14" />
+        <path d="M2 18c1.2 1 2.4 1.5 3.6 1.5S8 19 9.2 18s2.4-1.5 3.6-1.5 2.4.5 3.6 1.5 2.4 1.5 3.6 1.5S22.8 19 24 18" />
+      </svg>
+    ),
     color: "#C4D9F5",
     tabColor: "#A8C8EE",
-    count: 3,
+    count: 1,
     projects: [
       {
-        title: "Luminary — SaaS Dashboard",
+        title: "FloodSense Assam",
         description:
-          "A full-featured analytics dashboard for SaaS businesses, with real-time charts, team collaboration, and subscription management. Built for performance and scale.",
-        tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Stripe", "Tailwind"],
-        github: "https://github.com",
-        live: "https://example.com",
+          "Real-time flood risk dashboard with ML predictions using ExtraTrees and RandomForest, interactive mapping via Leaflet.js, and Flask API deployment on Render.",
+        tech: ["Flask", "ExtraTrees", "RandomForest", "Leaflet.js", "Render"],
+        github: "https://github.com/ashlesha-sarma/flood-dashboard-assam",
+        live: "https://flood-dashboard-assam.onrender.com",
         status: "Live",
-      },
-      {
-        title: "Chronicle CMS",
-        description:
-          "Headless CMS with rich text editing, version history, multi-language support, and a GraphQL API. Designed for editorial teams working at speed.",
-        tech: ["React", "Node.js", "GraphQL", "MongoDB", "AWS S3"],
-        github: "https://github.com",
-        status: "Live",
-      },
-      {
-        title: "Forma — Design System",
-        description:
-          "An open-source React component library with 60+ accessible components, Storybook docs, and full Figma parity. Used by 3 production apps.",
-        tech: ["React", "TypeScript", "Storybook", "Radix UI", "CSS Variables"],
-        github: "https://github.com",
-        live: "https://example.com",
-        status: "Open Source",
       },
     ],
   },
   {
-    name: "AI / ML Projects",
-    icon: "⊛",
+    name: "SkillMap",
+    label: "Graph-Based System",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M9 18h6" />
+        <path d="M10 22h4" />
+        <path d="M8.5 14.5A6.5 6.5 0 1 1 15.5 14.5c-.8.7-1.3 1.6-1.5 2.5h-4c-.2-.9-.7-1.8-1.5-2.5Z" />
+      </svg>
+    ),
     color: "#F5DCA8",
     tabColor: "#ECC880",
-    count: 3,
+    count: 1,
     projects: [
       {
-        title: "DocuMind — RAG Pipeline",
+        title: "SkillMap",
         description:
-          "Enterprise document Q&A system using RAG over 100k+ documents. Achieves 91% retrieval accuracy with a custom chunking and embedding strategy.",
-        tech: ["Python", "LangChain", "OpenAI", "Pinecone", "FastAPI", "Next.js"],
-        github: "https://github.com",
-        live: "https://example.com",
+          "Graph-based learning roadmap generator using topological sorting and TF-IDF search, built with FastAPI backend, Next.js frontend, and React Flow visualizations.",
+        tech: ["FastAPI", "Next.js", "React Flow", "TF-IDF", "Topological Sorting"],
+        github: "https://github.com/ashlesha-sarma/skillmap",
+        live: "https://skillmap.onrender.com/",
         status: "Live",
-      },
-      {
-        title: "CodeReview Agent",
-        description:
-          "AI-powered GitHub bot that reviews PRs, catches bugs, suggests improvements, and leaves structured comments. Integrated with 20+ repos.",
-        tech: ["Python", "GPT-4", "GitHub API", "LangGraph", "Docker", "Redis"],
-        github: "https://github.com",
-        status: "Live",
-      },
-      {
-        title: "SentimentScope",
-        description:
-          "Fine-tuned BERT model for multi-label sentiment analysis on customer reviews. 94.2% F1 score, deployed as a REST API with sub-50ms latency.",
-        tech: ["PyTorch", "HuggingFace", "BERT", "FastAPI", "AWS Lambda"],
-        github: "https://github.com",
-        status: "Open Source",
       },
     ],
   },
   {
-    name: "Tools & CLIs",
-    icon: "⚙",
+    name: "AlgoQuest",
+    label: "Full Stack Platform",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <circle cx="5" cy="6" r="2" />
+        <circle cx="19" cy="5" r="2" />
+        <circle cx="7" cy="18" r="2" />
+        <circle cx="19" cy="16" r="2" />
+        <path d="M7 6h10M6.5 7.8l-1 8.4M18 6.8l1 7.2M9 17h8" />
+      </svg>
+    ),
     color: "#C4EDD4",
     tabColor: "#A0D8B0",
-    count: 2,
+    count: 1,
     projects: [
       {
-        title: "Flick — Git Workflow CLI",
+        title: "AlgoQuest",
         description:
-          "A smart Git CLI that automates branch naming, PR creation, and release notes using AI. Reduces manual overhead for solo devs and teams.",
-        tech: ["Rust", "GitHub API", "OpenAI", "Clap", "Tokio"],
-        github: "https://github.com",
-        status: "Open Source",
-      },
-      {
-        title: "Capsule — Env Manager",
-        description:
-          "Zero-config environment variable manager with encryption, team sharing, and CI integration. A simpler alternative to Doppler for small teams.",
-        tech: ["Go", "AES-256", "CLI", "GitHub Actions", "Docker"],
-        github: "https://github.com",
-        live: "https://example.com",
-        status: "WIP",
+          "Gamified DSA learning platform featuring 5 mini-games (BFS, Stack, Sorting, and more) with PostgreSQL, JWT auth, XP progression, and leaderboard tracking.",
+        tech: ["PostgreSQL", "JWT", "JavaScript", "TypeScript"],
+        github: "https://github.com/ashlesha-sarma",
+        live: "https://algo-quest-dsa-game.vercel.app/",
+        status: "Live",
       },
     ],
   },
   {
-    name: "Experiments",
-    icon: "✦",
+    name: "Mushroom Toxicity Analysis",
+    label: "ML Classification Model",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M10 3h4" />
+        <path d="M11 3v5l-6 10a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3L13 8V3" />
+        <path d="M8 14h8" />
+      </svg>
+    ),
     color: "#D6CCFF",
     tabColor: "#C0B6F0",
-    count: 2,
+    count: 1,
     projects: [
       {
-        title: "Lattice — Generative Art",
+        title: "Mushroom Toxicity Analysis",
         description:
-          "A creative coding project generating parametric geometric art using Rust + WASM. Exports high-res SVGs and supports real-time parameter tweaking.",
-        tech: ["Rust", "WASM", "WebGL", "Canvas API", "SVG"],
-        github: "https://github.com",
-        live: "https://example.com",
+          "Machine learning classification project for edible vs poisonous mushroom prediction, including Pandas-based preprocessing and Flask deployment.",
+        tech: ["Python", "Scikit-learn", "Pandas", "Flask"],
+        github: "https://github.com/ashlesha-sarma",
+        live: "https://mushroom-toxicity-analysis.onrender.com/",
         status: "Live",
-      },
-      {
-        title: "ToneType — AI Music",
-        description:
-          "Experimental interface that generates ambient music from typed text via fine-tuned MIDI transformer. Built for focus and creative flow states.",
-        tech: ["Python", "PyTorch", "MIDI", "Transformer", "Web Audio API"],
-        github: "https://github.com",
-        status: "WIP",
       },
     ],
   },
@@ -155,14 +137,14 @@ export default function Projects() {
       <div ref={ref} className="section-fade">
         {/* Label */}
         <div className="flex items-center gap-3 mb-14">
-          <span className="label-mono">§ 03 — Experiments</span>
+          <span className="label-mono">03 — Projects</span>
           <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
         </div>
 
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <h2 className="display-lg text-ink" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-            Work I&apos;m{" "}
-            <span className="italic text-accent-2">proud of.</span>
+            Selected work and{" "}
+            <span className="italic text-accent-2">builds.</span>
           </h2>
           <p className="text-sm text-ink/50 md:text-right max-w-xs">
             Click any folder to explore projects inside.
@@ -170,40 +152,39 @@ export default function Projects() {
         </div>
 
         {/* Folder Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
           {folders.map((folder) => (
             <button
               key={folder.name}
               onClick={() => setActiveFolder(folder)}
-              className="folder-card text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-2/50 rounded-2xl"
+              className="folder-card project-folder-card text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-2/50 rounded-2xl h-full"
               aria-label={`Open ${folder.name} folder`}
             >
               {/* Folder tab */}
               <div
-                className="folder-tab rounded-tl-lg rounded-tr-lg"
+                className="folder-tab project-folder-tab rounded-tl-lg rounded-tr-lg"
                 style={{ background: folder.tabColor }}
               />
 
               {/* Folder body */}
               <div
-                className="rounded-b-2xl rounded-tr-2xl p-6 pt-8 shadow-folder group-hover:shadow-folder-hover"
+                className="project-folder-body rounded-b-2xl rounded-tr-2xl p-6 pt-8 shadow-folder group-hover:shadow-folder-hover h-full min-h-[220px] flex flex-col"
                 style={{ background: folder.color }}
               >
                 {/* Icon */}
-                <div className="text-3xl text-ink/30 mb-4">{folder.icon}</div>
+                <div className="text-ink/70 mb-4">{folder.icon}</div>
 
                 {/* Folder name */}
                 <h3
-                  className="font-semibold text-ink mb-1 text-sm leading-snug"
-                  style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1rem" }}
+                  className="font-semibold text-ink text-base mb-2"
                 >
                   {folder.name}
                 </h3>
+                <p className="inline-flex items-center text-[13px] font-bold tracking-wide text-ink/90 px-3.5 py-1.5 rounded-full bg-white/45 backdrop-blur-md border border-white/70 shadow-[inset_0_1px_0_rgba(255,255,255,0.55),0_2px_6px_rgba(44,62,80,0.12)] mt-1 mb-2">
+                  {folder.label}
+                </p>
 
-                <div className="flex items-center justify-between mt-4">
-                  <span className="label-mono text-[10px]">
-                    {folder.count} project{folder.count !== 1 ? "s" : ""}
-                  </span>
+                <div className="flex items-center justify-end mt-auto pt-3">
                   <span className="text-ink/30 text-xs">→</span>
                 </div>
               </div>
@@ -211,25 +192,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Stats row */}
-        <div className="mt-14 grid grid-cols-3 gap-4 md:gap-8 max-w-lg">
-          {[
-            { value: "10+", label: "Projects shipped" },
-            { value: "3", label: "Open source libs" },
-            { value: "∞", label: "Experiments running" },
-          ].map(({ value, label }) => (
-            <div key={label} className="text-center">
-              <div
-                className="text-3xl font-semibold text-ink mb-1"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
-              >
-                {value}
-              </div>
-              <div className="text-xs text-ink/50">{label}</div>
-            </div>
-          ))}
         </div>
-      </div>
 
       {/* Modal */}
       {activeFolder && (

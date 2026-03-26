@@ -10,7 +10,7 @@ export default function About() {
       <div ref={ref} className="section-fade">
         {/* Section label */}
         <div className="flex items-center gap-3 mb-14">
-          <span className="label-mono">§ 01 — About</span>
+          <span className="label-mono">01 — About</span>
           <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
         </div>
 
@@ -26,23 +26,22 @@ export default function About() {
 
             <div className="paper-card rounded-2xl p-8 pt-10">
               <div className="display-lg text-ink mb-6 leading-tight" style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: "italic" }}>
-                Building things<br />that matter.
+                Building products<br />that solve real problems.
               </div>
               <p className="text-ink/65 leading-relaxed mb-5">
-                I&apos;m Alex — a full stack developer and AI/ML engineer with a
-                passion for building intelligent systems that feel effortless to
-                use. I bridge the gap between cutting-edge ML research and
-                production-ready software.
+                I&apos;m Ashlesha Sarma, a Full Stack Developer and AI/ML Engineer
+                focused on building reliable applications that combine strong
+                software fundamentals with practical machine learning.
               </p>
               <p className="text-ink/65 leading-relaxed">
-                Currently focused on LLM applications, agent architectures, and
-                the tools that make AI genuinely useful. I believe in clean
-                abstractions, thoughtful APIs, and interfaces that respect the
-                user.
+                I work across modern frontend systems, backend APIs, and ML
+                workflows to deliver end-to-end products - from data
+                preprocessing and model development to intuitive user
+                experiences.
               </p>
 
               <div className="mt-8 pt-6 border-t border-grid flex flex-wrap gap-2">
-                {["San Francisco, CA", "Open to remote", "Available Q3 2025"].map((tag) => (
+                {["Assam, India", "Open to internships", "Available for collaboration"].map((tag) => (
                   <span
                     key={tag}
                     className="text-xs px-3 py-1 rounded-full bg-beige text-accent-2 font-medium"
@@ -62,24 +61,24 @@ export default function About() {
 
             {[
               {
-                icon: "◈",
+                icon: "◉",
                 title: "AI/ML Engineering",
-                desc: "LLMs, RAG pipelines, fine-tuning, agent systems, and productionizing ML models at scale.",
-              },
-              {
-                icon: "◇",
-                title: "Full Stack Development",
-                desc: "React, Next.js, Node.js, Python — end-to-end from design system to deployment.",
+                desc: "Applied machine learning using Scikit-learn and PyTorch with strong preprocessing and feature engineering workflows.",
               },
               {
                 icon: "◉",
-                title: "Systems Design",
-                desc: "Distributed systems, API design, microservices, and infrastructure-as-code.",
+                title: "Full Stack Development",
+                desc: "Building complete products with React, Next.js, FastAPI, Flask, Node.js, and Express.js.",
               },
               {
-                icon: "◈",
-                title: "Developer Tooling",
-                desc: "CLIs, SDKs, internal platforms, and developer experience improvements.",
+                icon: "◉",
+                title: "Data-Driven Applications",
+                desc: "Developing interactive tools that integrate algorithms, data pipelines, and clean APIs.",
+              },
+              {
+                icon: "◉",
+                title: "Deployment & Tooling",
+                desc: "Version control, containerization, notebooks, and lightweight deployment using Git, Docker, Jupyter, and Render.",
               },
             ].map(({ icon, title, desc }) => (
               <div

@@ -6,12 +6,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Logo */}
         <div className="flex items-center gap-4">
-          <span
-            className="text-lg font-semibold text-ink"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            Alex<span className="text-accent-2 italic">.</span>
-          </span>
+          
           <span className="h-4 w-px bg-grid" />
           <span className="label-mono text-[10px]">
             Full Stack · AI/ML · Builder
@@ -33,7 +28,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-xs text-ink/35">
-          © {year} Alex Chen. Built with Next.js.
+          © {year} Ashlesha Sarma. 
         </p>
       </div>
 

@@ -4,40 +4,13 @@ import { useScrollFade } from "@/hooks/useScrollFade";
 
 const jobs = [
   {
-    company: "Anthropic",
-    role: "ML Engineer",
-    period: "2024 — Present",
-    location: "San Francisco, CA",
-    desc: "Working on evaluation frameworks and tooling for large language models. Building infrastructure to assess model capabilities and safety properties at scale.",
-    tags: ["Python", "PyTorch", "LLMs", "Evaluation", "Infrastructure"],
+    company: "TU-CODEs, Tezpur University",
+    role: "Core Programming Team Member",
+    period: "Nov 2025 — Present",
+    location: "Tezpur University",
+    desc: "Participated in hackathons and development sprints, and built a full-stack application using Gemini API.",
+    tags: ["Full Stack", "Gemini API", "Hackathons", "Dev Sprints"],
     accent: "#AFCBFF",
-  },
-  {
-    company: "Vercel",
-    role: "Senior Software Engineer",
-    period: "2022 — 2024",
-    location: "Remote",
-    desc: "Built and maintained core parts of the Next.js framework and Vercel platform. Led the Edge Functions runtime initiative, improving cold start times by 40%.",
-    tags: ["Next.js", "TypeScript", "Edge Runtime", "Rust", "Systems"],
-    accent: "#D6CCFF",
-  },
-  {
-    company: "Stripe",
-    role: "Software Engineer",
-    period: "2020 — 2022",
-    location: "San Francisco, CA",
-    desc: "Owned the developer dashboard billing flow. Reduced integration time for new merchants by 30% through improved SDK tooling and API design.",
-    tags: ["Ruby", "React", "APIs", "Payments", "SDK Design"],
-    accent: "#C4EDD4",
-  },
-  {
-    company: "Yelp",
-    role: "Software Engineer Intern",
-    period: "Summer 2019",
-    location: "San Francisco, CA",
-    desc: "Rebuilt the business search ranking pipeline using a gradient boosting model. Shipped to 100% of users with measurable CTR improvement.",
-    tags: ["Python", "ML", "Search", "A/B Testing"],
-    accent: "#FFE4B5",
   },
 ];
 
@@ -48,18 +21,19 @@ export default function Experience() {
     <section id="experience" className="py-24 px-6 max-w-6xl mx-auto">
       <div ref={ref} className="section-fade">
         {/* Label */}
-        <div className="flex items-center gap-3 mb-14">
-          <span className="label-mono">§ 04 — Work Log</span>
-          <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
-        </div>
+        
 
         <h2
           className="display-lg text-ink mb-14"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          Where I&apos;ve{" "}
-          <span className="italic text-accent-2">been.</span>
+          Experience and{" "}
+          <span className="italic text-accent-2">education.</span>
         </h2>
+        <div className="flex items-center gap-3 mb-14">
+          <span className="label-mono">04 — Experience</span>
+          <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
+        </div>
 
         {/* Timeline */}
         <div className="relative">
@@ -95,6 +69,7 @@ export default function Experience() {
 
                   <div
                     className="paper-card rounded-2xl p-6 hover:shadow-paper-lg transition-all duration-300 group"
+                    style={{ background: "rgba(196, 217, 245, 0.35)" }}
                   >
                     {/* Tape decoration on first item */}
                     {i === 0 && (
@@ -145,24 +120,44 @@ export default function Experience() {
         {/* Education */}
         <div className="mt-20 pt-16 border-t border-grid">
           <div className="flex items-center gap-3 mb-8">
-            <span className="label-mono text-[10px]">Education</span>
+            <span className="label-mono text-[10px]">05 — Education</span>
             <span className="block w-16 h-px bg-accent/40" />
           </div>
-          <div className="paper-card rounded-2xl p-6 max-w-md">
-            <h3
-              className="font-semibold text-ink mb-1"
-              style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.1rem" }}
-            >
-              B.S. Computer Science
-            </h3>
-            <p className="text-accent-2 text-sm font-medium mb-1">UC Berkeley</p>
-            <p className="text-xs text-ink/50">2016 — 2020 · GPA 3.9 · Honors</p>
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {["Machine Learning", "Systems", "Algorithms", "Distributed Computing"].map((c) => (
-                <span key={c} className="text-xs px-2 py-0.5 rounded bg-beige text-accent-2">
-                  {c}
-                </span>
-              ))}
+          <div className="grid md:grid-cols-2 gap-4 w-full">
+            <div className="paper-card rounded-2xl p-6" style={{ background: "rgba(196, 217, 245, 0.35)" }}>
+              <h3
+                className="font-semibold text-ink mb-1"
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem" }}
+              >
+                B.Tech, Computer Science &amp; Engineering
+              </h3>
+              <p className="text-accent-2 text-base font-medium mb-1">Tezpur University</p>
+              <p className="text-sm text-ink/55">2024 — 2028 · CGPA 8.97</p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {["Tezpur, Assam", "Expected 2028"].map((c) => (
+                  <span key={c} className="text-xs px-2 py-0.5 rounded bg-beige text-accent-2">
+                    {c}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="paper-card rounded-2xl p-6" style={{ background: "rgba(196, 217, 245, 0.35)" }}>
+              <h3
+                className="font-semibold text-ink mb-1"
+                style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "1.2rem" }}
+              >
+                B.Sc. (Hons), Data Science &amp; AI
+              </h3>
+              <p className="text-accent-2 text-base font-medium mb-1">IIT Guwahati (Online via Coursera)</p>
+              <p className="text-sm text-ink/55">2024 — 2028</p>
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {["Remote", "Expected 2028"].map((c) => (
+                  <span key={c} className="text-xs px-2 py-0.5 rounded bg-beige text-accent-2">
+                    {c}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

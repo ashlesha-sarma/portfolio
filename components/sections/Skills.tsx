@@ -8,48 +8,48 @@ const skills = [
     color: "folder-blue",
     tabColor: "#A8C8EE",
     icon: "{ }",
-    items: ["TypeScript", "Python", "Rust", "Go", "SQL"],
-    desc: "Strong foundations across systems and scripting languages.",
+    items: ["Python", "C++", "SQL", "JavaScript", "TypeScript"],
+    desc: "Core programming languages used across application and ML workflows.",
   },
   {
     category: "Frontend",
     color: "folder-purple",
     tabColor: "#C0B6F0",
     icon: "◻",
-    items: ["React", "Next.js", "Framer Motion", "Tailwind CSS", "Three.js"],
-    desc: "Crafting performant, beautiful user interfaces.",
+    items: ["React.js", "Next.js 14", "Tailwind CSS", "HTML", "CSS", "React Flow"],
+    desc: "Modern frontend development for interactive, responsive interfaces.",
   },
   {
-    category: "Backend & Cloud",
+    category: "Backend",
     color: "folder-green",
     tabColor: "#A8DDB8",
     icon: "⬡",
-    items: ["Node.js", "FastAPI", "PostgreSQL", "Redis", "AWS", "Docker"],
-    desc: "Scalable APIs and infrastructure that doesn't break.",
+    items: ["Flask", "FastAPI", "Node.js", "Express.js"],
+    desc: "API development and server-side application architecture.",
   },
   {
-    category: "AI / ML",
+    category: "Databases",
     color: "folder-amber",
     tabColor: "#ECC880",
     icon: "⊛",
-    items: ["PyTorch", "LangChain", "OpenAI API", "HuggingFace", "RAG", "Fine-tuning"],
-    desc: "From research to production ML systems.",
+    items: ["PostgreSQL", "SQLite"],
+    desc: "Relational database design and integration for production applications.",
   },
   {
-    category: "Tools & Ops",
+    category: "ML / Data",
     color: "folder-blue",
     tabColor: "#A8C8EE",
     icon: "⚙",
-    items: ["Git", "GitHub Actions", "Terraform", "Kubernetes", "Vercel", "Datadog"],
-    desc: "DevOps and tooling for smooth delivery.",
+    items: ["Scikit-learn", "PyTorch", "Pandas", "NumPy", "Feature Engineering", "TF-IDF"],
+    desc: "Machine learning and data processing for practical predictive systems.",
   },
   {
-    category: "Design",
+    category: "Tools",
     color: "folder-purple",
     tabColor: "#C0B6F0",
     icon: "✦",
-    items: ["Figma", "Framer", "Design Systems", "Accessibility", "Motion Design"],
-    desc: "Design thinking meets engineering precision.",
+    items: ["Git", "Docker", "Jupyter", "Render"],
+    desc: "Development and deployment tools for efficient delivery cycles.",
   },
 ];
 
@@ -68,7 +68,7 @@ export default function Skills() {
       <div ref={ref} className="section-fade">
         {/* Label */}
         <div className="flex items-center gap-3 mb-14">
-          <span className="label-mono">§ 02 — Toolbox</span>
+          <span className="label-mono">02 — Tech Stack</span>
           <span className="block flex-1 h-px bg-gradient-to-r from-accent/50 to-transparent max-w-xs" />
         </div>
 
@@ -81,27 +81,26 @@ export default function Skills() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map(({ category, color, tabColor, icon, items, desc }) => (
-            <div key={category} className="folder-card group">
+            <div key={category} className="folder-card skill-folder-card group h-full">
               {/* Folder tab */}
               <div
-                className="folder-tab rounded-tl-md rounded-tr-md"
+                className="folder-tab skill-folder-tab rounded-tl-md rounded-tr-md"
                 style={{ background: tabColor }}
               />
 
               {/* Folder body */}
               <div
-                className="rounded-b-2xl rounded-tr-2xl p-6 shadow-folder group-hover:shadow-folder-hover transition-all duration-300"
+                className="skill-folder-body rounded-b-2xl rounded-tr-2xl p-6 shadow-folder group-hover:shadow-folder-hover transition-all duration-300 h-full min-h-[250px] flex flex-col"
                 style={{ background: colorMap[color] ?? "#C8DEFF" }}
               >
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-2xl text-ink/50">{icon}</span>
-                  <span className="label-mono text-[10px]">{items.length} tools</span>
                 </div>
 
                 <h3 className="font-semibold text-ink text-base mb-2">{category}</h3>
                 <p className="text-xs text-ink/55 leading-relaxed mb-4">{desc}</p>
 
-                <div className="flex flex-wrap gap-1.5">
+                <div className="flex flex-wrap gap-1.5 mt-auto">
                   {items.map((item) => (
                     <span
                       key={item}
