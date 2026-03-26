@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const roles = ["Full Stack Developer + AI/ML Engineer", "AI/ML Engineer", "Full Stack Developer"];
+const roles = ["Full Stack Developer + AI/ML Enthusiast", "AI/ML Enthusiast", "Full Stack Developer"];
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -35,7 +35,7 @@ export default function Hero() {
       {/* Scrapbook element — tape top left */}
       <div
         className="tape z-0"
-        style={{ top: "1.5rem", left: "1rem", transform: "rotate(-6deg)", opacity: 0.7 }}
+        style={{ top: "1.5rem", left: "0.4rem", transform: "rotate(-6deg)", opacity: 0.7 }}
         aria-hidden
       />
 

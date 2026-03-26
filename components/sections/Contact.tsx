@@ -107,7 +107,15 @@ export default function Contact() {
               aria-hidden
             />
 
-            <div className="paper-card rounded-2xl p-8 pt-10">
+            <div 
+              className="rounded-2xl p-8 pt-10"
+              style={{
+                backgroundColor: "#F8F3EA",
+                boxShadow: "0 20px 40px rgba(0,0,0,0.08)",
+                transform: "translateY(-10px)",
+                border: "1px solid rgba(255,255,255,0.6)"
+              }}
+            >
               {status === "success" ? (
                 <div className="text-center py-10">
                   <div className="wax-seal mx-auto mb-5">✓</div>

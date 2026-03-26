@@ -61,9 +61,24 @@ export default function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="glass-btn inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-ink/80 hover:text-ink"
+            className="btn-primary inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium"
           >
-            <span className="label-mono text-xs"></span> Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="drop-shadow-sm"
+            >
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            Resume
           </a>
         </div>
 
@@ -99,11 +114,25 @@ export default function Navbar() {
             <li>
               <a
                 href="/resume.pdf"
-                className="inline-flex glass-btn items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-ink/80"
+                className="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium w-full justify-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ↓ Resume
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+                  <polyline points="14 2 14 8 20 8" />
+                </svg>
+                Resume
               </a>
             </li>
           </ul>
