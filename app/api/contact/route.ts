@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
 interface ContactBody {
   name: string;
@@ -35,25 +38,38 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Log the message (replace with email integration like Resend/Nodemailer)
-    console.log("📬 New contact form submission:", {
-      name: name.trim(),
-      email: email.trim(),
-      message: message.trim(),
-      receivedAt: new Date().toISOString(),
-    });
-
-    // TODO: Integrate with email service
-    // e.g. await resend.emails.send({ from: '...', to: '...', subject: `New message from ${name}`, text: message })
+    try {
+      await resend.emails.send({
+        from: "Ashlesha Portfolio <onboarding@resend.dev>",
+        to: "ashleshasarma.contact@gmail.com",
+        replyTo: email,
+        subject: `New message from ${name}`,
+        html: `
+          <h2>New Portfolio Message</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <hr />
+          <p><strong>Message:</strong></p>
+          <p style="white-space: pre-wrap;">${message}</p>
+        `,
+      });
+    } catch (resendError) {
+      console.error("Resend API Error:", resendError);
+      return NextResponse.json(
+        { error: "Failed to send the email. Please try again later." },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       {
         success: true,
-        message: "Thank you! I'll get back to you soon.",
+        message: "Thank you! Your message has been sent successfully.",
       },
       { status: 200 }
     );
-  } catch {
+  } catch (error) {
+    console.error("Server Error:", error);
     return NextResponse.json(
       { error: "Something went wrong. Please try again." },
       { status: 500 }
