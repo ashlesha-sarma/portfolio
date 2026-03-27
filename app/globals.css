@@ -18,20 +18,6 @@
   --midnight: #122C4F;
 }
 
-/* ── DARK MODE OVERRIDES ── */
-.dark {
-  --bg: #0D1B2E;
-  --bg-alt: #091525;
-  --grid: #1A3560;
-  --accent: #1E4070;
-  --accent-2: #7EB4D4;
-  --ink: #E2D9CD;
-  --ink-secondary: #9EB8CE;
-  --muted: #2E4A65;
-  --beige: #1E3252;
-  --cream-light: #132038;
-  --midnight: #7EB4D4;
-}
 
 
 * {
@@ -152,73 +138,7 @@ body {
   transform: translateY(0) scale(0.99);
 }
 
-/* ── DARK MODE: Glass & Button overrides ── */
-.dark .glass {
-  background: rgba(13, 27, 46, 0.72);
-  border: 1px solid rgba(126, 180, 212, 0.18);
-  box-shadow:
-    0 2px 24px rgba(0, 0, 0, 0.35),
-    0 1px 0 rgba(126, 180, 212, 0.12) inset,
-    0 -1px 0 rgba(0, 0, 0, 0.25) inset;
-}
 
-.dark .glass-modal {
-  background: rgba(13, 22, 40, 0.92);
-  border: 1px solid rgba(126, 180, 212, 0.15);
-  box-shadow:
-    0 24px 80px rgba(0, 0, 0, 0.5),
-    0 4px 16px rgba(0, 0, 0, 0.3),
-    0 1px 0 rgba(126, 180, 212, 0.1) inset;
-}
-
-.dark .glass-btn {
-  background: linear-gradient(
-    160deg,
-    rgba(30, 50, 82, 0.8) 0%,
-    rgba(20, 38, 65, 0.65) 100%
-  );
-  border: 1px solid rgba(126, 180, 212, 0.2);
-  box-shadow:
-    0 2px 12px rgba(0, 0, 0, 0.3),
-    0 1px 0 rgba(126, 180, 212, 0.1) inset;
-}
-
-.dark .glass-btn:hover {
-  background: linear-gradient(
-    160deg,
-    rgba(38, 62, 100, 0.9) 0%,
-    rgba(28, 50, 82, 0.75) 100%
-  );
-  box-shadow:
-    0 6px 22px rgba(0, 0, 0, 0.4),
-    0 1px 0 rgba(126, 180, 212, 0.15) inset;
-}
-
-.dark .btn-primary {
-  background: linear-gradient(160deg, #5B88B2 0%, #4a7299 60%, #3a5e80 100%);
-  box-shadow:
-    0 4px 16px rgba(74, 114, 153, 0.5),
-    0 1px 0 rgba(255, 255, 255, 0.15) inset;
-}
-
-.dark .btn-primary:hover {
-  background: linear-gradient(160deg, #6796BF 0%, #5B88B2 60%, #4a7299 100%);
-  box-shadow:
-    0 8px 24px rgba(91, 136, 178, 0.55),
-    0 1px 0 rgba(255, 255, 255, 0.2) inset;
-}
-
-.dark .btn-secondary {
-  background: #1E3252;
-  color: #E2D9CD;
-  border: 1px solid #2A4470;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-.dark .btn-secondary:hover {
-  background: #243C62;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
-}
 
 /* ── PAPER CARD ── */
 .paper-card {
@@ -231,13 +151,6 @@ body {
   position: relative;
 }
 
-.dark .paper-card {
-  border: 1px solid rgba(30, 53, 95, 0.8);
-  box-shadow:
-    0 2px 12px rgba(0, 0, 0, 0.25),
-    0 1px 3px rgba(0, 0, 0, 0.2),
-    0 0 0 0.5px rgba(30, 53, 95, 0.6);
-}
 
 
 /* ── GRID BACKGROUND ── */
@@ -352,38 +265,7 @@ body {
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
-/* ── WAX SEAL ── */
-.wax-seal {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 38% 35%, #6B8FB3, #4a6f94);
-  box-shadow:
-    0 2px 8px rgba(74, 111, 148, 0.45),
-    0 0 0 3px rgba(107, 143, 179, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255,255,255,0.9);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  position: relative;
-}
 
-.wax-seal::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  width: 10px;
-  height: 6px;
-  background: rgba(255,255,255,0.18);
-  border-radius: 50%;
-  transform: rotate(-20deg);
-}
 
 /* ── TYPOGRAPHY ── */
 .display-xl {
