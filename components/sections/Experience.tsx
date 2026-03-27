@@ -8,8 +8,8 @@ const jobs = [
     role: "Core Programming Team Member",
     period: "Nov 2025 — Present",
     location: "Tezpur University",
-    desc: "Participated in hackathons and development sprints, and built a full-stack application using Gemini API.",
-    tags: ["Full Stack", "Gemini API", "Hackathons", "Dev Sprints"],
+    desc: "Participated in hackathons and coding sessions, and built a full-stack application with LLM integration.",
+    tags: ["Full Stack Web Application", "LLM", "Hackathons"],
     accent: "#AFCBFF",
   },
 ];
