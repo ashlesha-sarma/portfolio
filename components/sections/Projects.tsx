@@ -69,7 +69,7 @@ const folders: Folder[] = [
           "Graph-based learning roadmap generator using topological sorting and TF-IDF search, built with FastAPI backend, Next.js frontend, and React Flow visualizations.",
         tech: ["FastAPI", "Next.js", "React Flow", "TF-IDF", "Topological Sorting"],
         github: "https://github.com/ashlesha-sarma/skillmap",
-        live: "https://skillmap.onrender.com/",
+        live: "https://skillmap-eight.vercel.app/",
         status: "Live",
       },
     ],
