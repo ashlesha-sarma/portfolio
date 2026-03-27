@@ -121,7 +121,7 @@ const folders: Folder[] = [
           "Machine learning classification project for edible vs poisonous mushroom prediction, including Pandas-based preprocessing and Flask deployment.",
         tech: ["Python", "Scikit-learn", "Pandas", "Flask"],
         github: "https://github.com/ashlesha-sarma",
-        live: "https://mushroom-toxicity-analysis.onrender.com/",
+        live: "https://mushrom-toxicity-analysis.onrender.com/",
         status: "Live",
       },
     ],
