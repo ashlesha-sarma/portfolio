@@ -95,7 +95,7 @@ const folders: Folder[] = [
         description:
           "Gamified DSA learning platform featuring 5 mini-games (BFS, Stack, Sorting, and more) with PostgreSQL, JWT auth, XP progression, and leaderboard tracking.",
         tech: ["PostgreSQL", "JWT", "JavaScript", "TypeScript"],
-        github: "https://github.com/ashlesha-sarma",
+        github: "https://github.com/ashlesha-sarma/AlgoQuest-DSA-game",
         live: "https://algo-quest-dsa-game.vercel.app/",
         status: "Live",
       },
@@ -120,7 +120,7 @@ const folders: Folder[] = [
         description:
           "Machine learning classification project for edible vs poisonous mushroom prediction, including Pandas-based preprocessing and Flask deployment.",
         tech: ["Python", "Scikit-learn", "Pandas", "Flask"],
-        github: "https://github.com/ashlesha-sarma",
+        github: "https://github.com/ashlesha-sarma/mushroom-toxicity-analysis",
         live: "https://mushrom-toxicity-analysis.onrender.com/",
         status: "Live",
       },
