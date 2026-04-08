@@ -126,6 +126,58 @@ const folders: Folder[] = [
       },
     ],
   },
+  {
+    name: "CampusPaws",
+    label: "Full Stack Platform",
+    icon: (
+      <svg viewBox="0 0 256 256" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="16" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <path d="M128 130C85 130 50 150 50 185C50 220 90 235 128 220C166 235 206 220 206 185C206 150 171 130 128 130Z" />
+        <ellipse cx="95" cy="70" rx="26" ry="46" />
+        <ellipse cx="161" cy="70" rx="26" ry="46" />
+        <ellipse cx="40" cy="128" rx="24" ry="34" />
+        <ellipse cx="216" cy="128" rx="24" ry="34" />
+      </svg>
+    ),
+    color: "#F5C4C4",
+    tabColor: "#EEA8A8",
+    count: 1,
+    projects: [
+      {
+        title: "CampusPaws",
+        description:
+          "Full-stack animal welfare and adoption platform with role-based authentication (user and admin), a protected admin panel for managing animals, adoption requests, and donation campaigns. Integrates Razorpay payment gateway with HMAC signature verification and a REST API across 5 route modules backed by SQLite with Multer for image uploads.",
+        tech: ["React 18", "Vite", "Node.js", "Express.js", "SQLite", "Razorpay", "Tailwind CSS", "bcryptjs"],
+        github: "https://github.com/ashlesha-sarma/campus-paws",
+        live: "https://campus-paws.vercel.app",
+        status: "Live",
+      },
+    ],
+  },
+  {
+    name: "TermFolio",
+    label: "Interactive CLI Portfolio",
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <rect x="2" y="3" width="20" height="18" rx="2" />
+        <path d="M7 9l3 3-3 3" />
+        <path d="M13 15h4" />
+      </svg>
+    ),
+    color: "#C4E8D6",
+    tabColor: "#A8D8BC",
+    count: 1,
+    projects: [
+      {
+        title: "TermFolio",
+        description:
+          "Terminal-style interactive portfolio built with React and TypeScript. Features command autocomplete, keyboard history navigation (↑↓), animated text outputs, and a hidden 'sudo hire me' easter egg for recruiters. Fully deployed on Vercel.",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+        github: "https://github.com/ashlesha-sarma/terminal-portfolio-ashlesha",
+        live: "https://terminal-portfolio-ashlesha.vercel.app",
+        status: "Live",
+      },
+    ],
+  },
 ];
 
 export default function Projects() {

@@ -121,16 +121,35 @@ body {
 
 /* ── SECONDARY BUTTON ── */
 .btn-secondary {
-  background: #E6D8C7;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 219, 245, 0.18) 0%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(201, 219, 245, 0.12) 100%
+  );
   color: #1A1A1A;
-  border: 1px solid #D4C4AD;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(201, 219, 245, 0.55);
+  box-shadow:
+    0 2px 12px rgba(91, 136, 178, 0.10),
+    0 1px 0 rgba(255, 255, 255, 0.80) inset,
+    0 -1px 0 rgba(201, 219, 245, 0.15) inset;
+  backdrop-filter: blur(12px) saturate(1.5);
+  -webkit-backdrop-filter: blur(12px) saturate(1.5);
   transition: all 0.22s ease;
 }
 
 .btn-secondary:hover {
-  background: #DDD0BE;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(
+    135deg,
+    rgba(201, 219, 245, 0.28) 0%,
+    rgba(255, 255, 255, 0.40) 50%,
+    rgba(201, 219, 245, 0.20) 100%
+  );
+  border-color: rgba(201, 219, 245, 0.75);
+  box-shadow:
+    0 6px 20px rgba(91, 136, 178, 0.18),
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 -1px 0 rgba(201, 219, 245, 0.25) inset;
   transform: translateY(-2px);
 }
 

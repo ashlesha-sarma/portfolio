@@ -60,6 +60,21 @@ export default function Navbar() {
 
         {/* Right controls */}
         <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://terminal-portfolio-ashlesha.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-medium text-accent-2 border border-accent/50 transition-all duration-200 hover:border-accent-2/60 hover:text-accent-2"
+            style={{
+              fontFamily: "'DM Mono', monospace",
+              background: "linear-gradient(135deg, rgba(201,219,245,0.18) 0%, rgba(255,255,255,0.28) 50%, rgba(201,219,245,0.12) 100%)",
+              backdropFilter: "blur(12px) saturate(1.5)",
+              WebkitBackdropFilter: "blur(12px) saturate(1.5)",
+              boxShadow: "0 1px 0 rgba(255,255,255,0.80) inset, 0 2px 8px rgba(91,136,178,0.10)",
+            }}
+          >
+            &gt; Open Terminal
+          </a>
         </div>
 
         {/* Mobile: hamburger */}
@@ -91,7 +106,18 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-
+            <li>
+              <a
+                href="https://terminal-portfolio-ashlesha.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-accent-2 hover:text-accent-2/80 transition-colors"
+                style={{ fontFamily: "'DM Mono', monospace" }}
+                onClick={() => setMenuOpen(false)}
+              >
+                &gt; Open Terminal
+              </a>
+            </li>
           </ul>
         </div>
       )}

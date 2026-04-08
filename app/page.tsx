@@ -24,18 +24,9 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-
-        {/* Alternate-section contrast */}
-        <div style={{ background: "linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 50%, var(--bg) 100%)" }}>
-          <About />
-        </div>
-
+        <About />
         <Skills />
-
-        <div style={{ background: "linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 50%, var(--bg) 100%)" }}>
-          <Projects />
-        </div>
-
+        <Projects />
         <Experience />
         <Contact />
         <Footer />
@@ -43,4 +34,3 @@ export default function Home() {
     </main>
   );
 }
-
